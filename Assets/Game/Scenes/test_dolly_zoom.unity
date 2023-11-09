@@ -668,8 +668,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10b00338933efb14da44c378b943a70e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 1888827124}
-  zoomMultiplier: 1000
+  maxTargetDistance: 10
+  targetLayerMask:
+    serializedVersion: 2
+    m_Bits: 128
+  dollyMultiplier: 100
   smoothTime: 0.25
 --- !u!81 &1300534130
 AudioListener:
@@ -739,7 +742,7 @@ Transform:
   m_GameObject: {fileID: 1300534128}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.37184536, y: 0.9090489, z: 1.0796087}
+  m_LocalPosition: {x: -0.37184536, y: 0.9090489, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -757,7 +760,7 @@ GameObject:
   - component: {fileID: 1888827123}
   - component: {fileID: 1888827122}
   - component: {fileID: 1888827121}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: target
   m_TagString: Untagged
   m_Icon: {fileID: 0}
